@@ -1,0 +1,58 @@
+//  Prefix.pch
+#ifndef WeiChat_1511_Prefix_pch
+#define WeiChat_1511_Prefix_pch
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UINavigationController+FDFullscreenPopGesture.h"
+#import "ZCXMPPManager.h"
+//#import "UIDevice+IdentifierAddition.h"
+#import "NSDictionary+Value.h"
+#import "NSString+Crypto.h"
+#import "UIView+Size.h"
+#import "UIImage+Ext.h"
+#import "UIColor+Hex.h"
+#import "AppMacros.h"
+#import "DebugTool.h"
+#import "Constants.h"
+#import "CommonUI.h"
+#import "SVProgressHUD.h"
+#import "DataStore.h"
+#import "MJRefresh.h"
+
+#endif
+//定义网络接口
+#define LIMIT  @"http://115.28.35.83:8088/app/iAppFree/api/limited.php?page=%d&number=20"
+#define FREE   @"http://115.28.35.83:8088/app/iAppFree/api/free.php?page=%d&number=20"
+#define REDUCE @"http://115.28.35.83:8088/app/iAppFree/api/reduce.php?page=%d&number=20"
+#define HOT    @"http://115.28.35.83:8088/app/iAppFree/api/hot.php?page=%d&number=20"
+
+//分类的地址
+#define CATEGROY @"http://115.28.35.83:8088/app/iAppFree/api/appcate.php"
+
+//详情
+#define DETAIL @"http://iappfree.candou.com:8080/free/applications/%@?currency=rmb"
+
+//周围应用
+#define FIND @"http://iappfree.candou.com:8080/free/applications/recommend?longitude=%f&latitude=%f"
+
+//专题
+#define TOP @"http://115.28.35.83:8088/app/iAppFree/api/topic.php?page=%d"
+
+
+//本地收藏使用的宏定义
+#define COLLECT @"collect"
+
+#define IOS9 [[[UIDevice currentDevice]systemVersion]floatValue]>=9.0
+
+
+//百思不得姐
+//定义白色
+#define COLOR [UIColor colorWithPatternImage:[UIImage imageNamed:@"navigationbarBackgroundWhite.png"]]
+
+#define API @"http://api.budejie.com/api/api_open.php"
+//多媒体处理类
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
