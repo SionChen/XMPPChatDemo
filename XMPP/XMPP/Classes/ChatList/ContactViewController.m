@@ -70,6 +70,8 @@
         dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
         dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
             [SVProgressHUD showSuccessWithStatus:@"发送请求成功"];
+            [ZCMessageObject fetchRecentChatByPage:20];
+            [self loadData];
         });
     }
     
@@ -138,7 +140,8 @@
         dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
         dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
             [SVProgressHUD showSuccessWithStatus:@"删除成功"];
-            [self _handleViewBack];
+            [ZCMessageObject fetchRecentChatByPage:20];
+            [self loadData];
         });
         
         
