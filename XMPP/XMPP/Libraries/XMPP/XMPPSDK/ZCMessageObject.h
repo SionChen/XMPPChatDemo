@@ -2,8 +2,8 @@
 //  ZCMessageObject.h
 //  XMPPEncapsulation
 //
-//  Created by ZhangCheng on 14-4-10.
-//  Copyright (c) 2014年 zhangcheng. All rights reserved.
+//  Created by 超级腕电商 on 16/6/4.
+//  Copyright © 2016年 超级腕电商. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

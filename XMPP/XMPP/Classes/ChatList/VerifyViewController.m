@@ -2,7 +2,7 @@
 //  VerifyViewController.m
 //  XMPP
 //
-//  Created by 超级腕电商 on 16/7/8.
+//  Created by 超级腕电商 on 16/6/4.
 //  Copyright © 2016年 超级腕电商. All rights reserved.
 //
 
